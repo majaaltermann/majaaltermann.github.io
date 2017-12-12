@@ -1,0 +1,375 @@
+nav ul {
+  text-align: center; /*mittige textausrichtung */
+  margin: 0; /*entfernt standardisierte aussenabstände */
+background-color: #DD5274;
+position: fixed;
+z-index: 3;
+top: 0;
+width: 100%;
+}
+
+nav li {
+  display: inline; /* sorgt dass li-elemente nebeneinander dargestellt werden */
+}
+
+nav a {
+  display: inline-block;
+
+color: #ffffff;
+font-size: 18px;
+font-family: 'Bungee', cursive;
+padding: 22px 15px;
+text-decoration: none;
+font-weight: 600;
+}
+
+#about {
+  display:flex;
+  font-family: 'Bungee', cursive;
+}
+#portrait {
+  width: 50%;
+  position: relative;
+  font-family: 'Bungee', cursive;
+}
+#portrait_image{
+  background-size: cover;
+  background-image: url(../img/beeef.jpg);
+  background-position: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+}
+
+#beschreibung{
+  margin-top: 85px;
+  width: 50%;
+  background:#ffffff;
+  color: #DD5274;
+  font-family: 'Bungee', cursive;
+}
+#name {min-height:200px;
+margin; 2%;
+padding: 5%;
+color: #DD5274;
+font-family: 'Bungee', cursive;
+}
+#adresse {
+  color:#ffffff;
+  background:#DD5274;
+  min-height: 150px;
+  padding:5%;
+  margin-left: 5%;
+  font-family: 'Bungee', cursive;
+
+}
+
+body {
+  font-size: 14px;
+  font-family: 'Bungee', cursive;
+  line-height: 21px;
+  color: #DD5274;
+}
+a {
+  color: #440B2B;
+  text-decoration: none;
+}
+p {
+  color: #440B2B;
+  font-size: 16px;
+}
+
+
+#beschreibung h1 {
+color: #440B2B;
+line-height: 100%;
+text-transform: uppercase;
+}
+#beschreibung span {
+  color: #DD5274;
+  fontsize: 10px;
+  text-transform;none;
+  margin-top: 10px;
+}
+
+#wrapper {
+  max-width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  padding: 5%;
+  color: #440B2B;
+}
+
+#wrapper h1 {
+  text-align: center;
+  line-height: 4em;
+  color: #440B2B;
+  font-size: 50px;
+}
+
+.skills-icons{
+  display: flex;
+  flex-flow: row wrap;
+
+}
+
+#erstes-icon, #zweites-icon, #drittes-icon {
+  height: 100px;
+  width: 33%;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+#erstes-icon {
+  background: url("../img/skills/vine_pink.svg")50% 50% no-repeat;
+  height: 100px;
+
+}
+#zweites-icon {
+  background: url("../img/skills/spotify.svg")50% 50% no-repeat;
+}
+#drittes-icon {
+  background: url("../img/social/snapcode.svg")50% 50% no-repeat;
+}
+#text-icon {
+  margin: -50px
+}
+
+#cv, #jobs, #ausbildung {
+  float: left;
+}
+.cv-eintrag {
+  width: 100%;
+  float: left;
+
+}
+.cv-eintrag img {
+  vertical-align: middle;
+  margin-right: 15px;
+  font-family: 'Bungee', cursive;
+}
+.links p {
+  display: inline-block;
+  padding:15px;
+  border: solid 1px #efefef;
+}
+.links {
+  float: left;
+}
+.rechts {
+  width: 80%;
+  vertical-align: top;
+  float: right;
+}
+.cv-titel {
+  font-size: 1.2em;
+  line-height: 3em;
+  font-weight: bold;
+  font-family: font-family: 'Bungee', cursive;
+}
+.cv-beschreibung {
+  border: 1px solid #efefef;
+  padding: 0 15px 15px 15px;
+  font-family: futura, sans-serif;
+}
+
+#portfolio{
+  float: left;
+}
+.portfolio-kacheln{
+  display: flex;
+  flex-flow: row wrap;
+}
+.portfolio-eintrag {
+  position: relative;
+  width: 33.3333%;
+}
+.portfolio-eintrag img {
+  width: 100%;
+  display: block;
+}
+.portfolio-eintrag .arbeit-titel {
+  background: rgba(165, 58, 89, 0.80);
+  height: 100%;
+  color: white;
+  padding: 45% 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  box-sizing: border-box;
+  visibility: hidden;
+  font-size: 12px;
+}
+.portfolio-eintrag:hover .arbeit-titel {
+  visibility: visible;
+}
+
+#formular{
+clear: both;
+}
+
+
+.Kontaktformular {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.form-control, textarea {
+  padding: 2%;
+  width: 92%;
+  margin: 2%;
+}
+
+.absenden {
+  padding: 2%;
+  width: 96%;
+  margin: 2%;
+  background: #DD5274;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-family:'Bungee', cursive;
+
+}
+.absenden:hover {
+  background:#A53A59;
+}
+
+footer{
+  background: #DD5274;
+  color: white;
+  padding:2% 0;
+  margin:2% 0 0 0;
+  text-align:center;
+}/* Mediaqueries bis 960px */
+
+img.img-links {
+  width: 48%;
+  float:left;
+  margin: 0 4% 4% 0;
+}
+img.img-rechts {
+  width: 48%;
+  margin: 0 0% 4% 0;
+}
+.back{
+  width 100%;
+  text-align:center;
+  height:4em;
+}
+nav a:hover {
+  color:#440B2B;
+  cursor: pointer;
+}
+
+  #adresse {
+
+  }
+#beschreibung{
+  width:100%;
+}
+#portrait{
+  width:100%;
+  padding-bottom: 56.25%
+}
+#erstes-icon, #zweites-icon, #drittes-icon{
+}
+section#cv {
+  padding: 0 5%;
+}
+.links {
+  width: 100%
+  text-algin: center;
+}@media only screen and (max-width: 960px){
+  #about{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #beschreibung {
+    width: 100%;
+  }
+  #portrait {
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+  }
+  #skills_image {
+    width: 100%;
+  }
+  section#cv {
+    padding :0 5%;
+  }
+  .links {
+    width: 100%;
+    text-align: center;
+  }
+  .rechts {
+    width: 100%;
+  }
+  #erstes-icon, #zweites-icon, #drittes-icon{
+    width: 100%;
+  }
+}
+/* Mediaqueries unter 480Pixel - z.B. Handy im Hochformat */
+@media only screen and (max-width: 480px){
+
+  ⁠⁠⁠body {
+  		margin-top: 59px;
+  	}
+
+  	nav li {
+  		display: block;
+  		line-height: 0.1em;
+  	}
+
+  	ul {
+      transform: translate(0%, 0%);
+      margin: 0;
+      padding: 0;
+      transform: translate(0%, -285px);
+      transition: 1s;
+  	}
+
+  	ul.active {
+  		transform: translate(0%, 58px);
+  	}
+
+  	.mobile-menu-bar {
+  		position: fixed;
+      left: 0;
+      top: 0;
+      width: 100vw;
+      background-color: #DD5274;
+      z-index: 200;
+  	}
+
+  	.hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
+  		background-color: #FFFFFF;
+  	}
+
+  	#hamburger {
+  		display: inline;
+  		float: right;
+  	}
+
+  	#portrait {
+  		margin-top: 0px;
+  	}
+
+  	a.scroll {
+  		width: 100%;
+  	}
+
+  	main {
+  		padding: 0;
+  	}
+
+  	.portfolio-eintrag {
+  		margin: 0 auto;
+  		text-align: center;
+  		width: 100%;
+  	}
+}
